@@ -1,0 +1,189 @@
+/* доп */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.font {
+    font-family: 'Nunito', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* осн */
+
+.header {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-name: hanim;
+    animation-iteration-count: infinite;
+}
+
+.header-text {
+    font-size: 40px;
+    color: white;
+}
+
+.controls, #output {
+    /* border: 1px solid black; */
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.outputs {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasks {
+    height: auto;
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-name: border-anim;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+}
+
+#output {
+    height: 150px;
+    width: 80%;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-name: border-anim;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+}
+
+.inptask {
+    margin: 10px 5px 10px 0px;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-name: border-anim;
+    animation-iteration-count: infinite;
+}
+
+.btn-task {
+    margin: 10px 5px 10px 5px;
+    height: 54px;
+    width: 200px;
+    background: none;
+    border-radius: 5px;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-name: border-anim;
+    animation-iteration-count: infinite;
+}
+.btn-task:active {
+    position: relative;
+    right: 1px;
+    top: 1px;
+}
+
+.tasks-title {
+    font-size: 20px;
+}
+
+.t-list {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.t-lict_elem {
+    height: 50px;
+    display: flex;
+    border-radius: 5px;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-name: border-anim;
+    animation-iteration-count: infinite;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes hanim{
+    0% {
+        background-color: #4340ff;
+    }
+    50% {
+        background-color: #4099ff;
+    }
+    100% {
+        background-color: #40c3ff;
+    }
+}
+
+@keyframes border-anim{
+    0% {
+        border: 2px solid #4340ff;
+    }
+    50% {
+        border: 2px solid #4099ff;
+    }
+    100% {
+        border: 2px solid #40c3ff;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px){
+    .header-text {
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    .header-text {
+        font-size: 20px;
+    }
+}
